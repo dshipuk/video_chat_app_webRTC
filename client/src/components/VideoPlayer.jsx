@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
-import { Grid, Typography, Paper } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
+import { Grid, Typography, Paper, makeStyles } from "@material-ui/core";
 
 import { SocketContext } from "../SocketContext";
 
@@ -35,7 +34,7 @@ const VideoPlayer = () => {
         <Paper className={classes.paper}>
           <Grid item xs={12} md={6}>
             <Typography variant="h5" gutterBottom>
-              {name || "name"}
+              {name || "Name"}
             </Typography>
             <video
               playsInline
@@ -47,7 +46,6 @@ const VideoPlayer = () => {
           </Grid>
         </Paper>
       )}
-
       {callAccepted && !callEnded && (
         <Paper className={classes.paper}>
           <Grid item xs={12} md={6}>
